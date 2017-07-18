@@ -12,6 +12,9 @@ global.tile[adjXTile].merged = true;
 global.tile[currTile] = -1;
 global.tilesFilled[currTile] = false;
 
+//add to score
+scrAddScore(global.tile[adjXTile].value);
+
 //Update parameters - tile
 currTileId.isActive = false;
 currTileId.x = room_width + 200;

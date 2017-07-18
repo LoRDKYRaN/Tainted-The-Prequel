@@ -113,6 +113,12 @@ var gameMap = json_decode(gameJSON);
 var _freeTiles = ds_map_find_value(gameMap, "freeTiles");
 objGame.freeTiles = _freeTiles;
 
+//ObjGame playerScore
+var gameJSON = saveArray[32];
+var gameMap = json_decode(gameJSON);
+var _playerScore = ds_map_find_value(gameMap, "playerScore");
+objGame.playerScore = _playerScore;
+
 //close file
 file_text_close(loadFile);
 

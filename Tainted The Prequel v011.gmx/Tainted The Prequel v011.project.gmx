@@ -72,8 +72,14 @@
       </scripts>
       <script>scripts\scrStateGame.gml</script>
       <script>scripts\scrGameSpawnTile.gml</script>
+      <scripts name="Misc">
+        <script>scripts\scrAddScore.gml</script>
+      </scripts>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntScore</font>
+  </fonts>
   <objects name="objects">
     <object>objects\objGame</object>
     <object>objects\objTile</object>

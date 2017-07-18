@@ -42,6 +42,7 @@ scrTileBehaviour(3,7,11,15);
 
 //Spawn new tiles
 scrGameSpawnTile();
+if (playerLost) exit; 
 
 //Reset tile behaviour parameters
 scrTileBehaviourReset();

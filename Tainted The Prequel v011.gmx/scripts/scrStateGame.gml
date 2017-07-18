@@ -8,6 +8,6 @@ switch state {
     case "swipeLeft": scrGameSwipeLeftState(); break;
     case "swipeDown": scrGameSwipeDownState(); break;
     case "undo": scrGameUndoState(); break;
-    case "lost": print("LOST!!!"); break;
+    case "lost": ; scrGameLostState(); break;
     case "idle": break;
 } //switch state close bracket

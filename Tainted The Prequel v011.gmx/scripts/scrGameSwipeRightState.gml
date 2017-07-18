@@ -42,16 +42,11 @@ scrTileBehaviour(12,13,14,15);
 
 //Spawn new tiles
 scrGameSpawnTile();
-
-//Check if lost
-scrGameLoseCheck();
-if (lose) exit;
+if (playerLost) exit; 
 
 //Reset tile behaviour parameters
 scrTileBehaviourReset();
 
 //Save game
 scrSaveGame();
-
-
 state = "idle";

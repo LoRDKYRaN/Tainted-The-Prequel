@@ -37,7 +37,8 @@ canMove = false;
 canMerge = false;
 gameLoaded = false;
 moveExe = false;
-lose = false;
+playerLost = false;
+playerScore = 0;
 
 //Input parameters
 xStart = -1;
@@ -99,11 +100,43 @@ repeat(j) {
             <kind>1</kind>
             <string>///Control Game - FSM
 //FSM - check state
+print(freeTiles, state);
 scrGameCheckState();
 
 //FSM - execute state
 scrStateGame(state);
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw GUI Elements
+scrGui();
+
+draw_set_font(fntScore);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_colour(c_red);
+var textScore = "Score: " + string(objGame.playerScore);
+draw_text(xx50, yy20, textScore);
 </string>
           </argument>
         </arguments>

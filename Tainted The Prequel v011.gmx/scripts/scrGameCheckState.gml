@@ -8,13 +8,4 @@ if (objGame.tileInit == false) {
 //Check input
 scrCheckInput();
 
-/*
-//Check lose conditions
-if (freeTiles == 0) {
-    scrGameLoseCheck();
-    
-    if (canMerge) {
-        canMerge = false;
-    } else state = "lose";
-} //if free tiles 0 close bracket
 

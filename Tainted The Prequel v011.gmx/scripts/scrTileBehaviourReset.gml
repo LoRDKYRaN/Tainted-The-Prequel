@@ -10,3 +10,4 @@ for (i = 0; i < 16; i++) {
 
 //set something moved
 objGame.moveExe = false;
+objGame.playerLost = false;

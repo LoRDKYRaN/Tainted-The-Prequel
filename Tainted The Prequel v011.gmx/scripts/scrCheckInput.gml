@@ -63,13 +63,7 @@ if (key_r) {
 var i = 0;
 for (i = 0; i < freeTiles; i++) {
     global.tile[i] = -1; //set global tile to -1;
+    global.tilesFilled[i] = false;
 } //for tile pool close bracket
-
-//Set tiles unfilled
-var j = 15;
-repeat(j) {
-    global.tilesFilled[j] = false;
-    j--;
-}
     game_restart();
 }
